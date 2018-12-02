@@ -4,4 +4,5 @@ project(data_structure)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Main main.cpp)
-add_executable(Veclink veclink.cpp)
+add_executable(1 1.cpp)
+add_executable(2 2.cpp)

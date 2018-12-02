@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Veclink
+# Target rules for targets named 2
 
 # Build rule for target.
-Veclink: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Veclink
-.PHONY : Veclink
+2 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2
+.PHONY : 2
 
 # fast build rule for target.
-Veclink/fast:
-	$(MAKE) -f CMakeFiles/Veclink.dir/build.make CMakeFiles/Veclink.dir/build
-.PHONY : Veclink/fast
+2/fast:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
+.PHONY : 2/fast
+
+#=============================================================================
+# Target rules for targets named 1
+
+# Build rule for target.
+1 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1
+.PHONY : 1
+
+# fast build rule for target.
+1/fast:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/build
+.PHONY : 1/fast
 
 #=============================================================================
 # Target rules for targets named Main
@@ -135,6 +148,60 @@ Main: cmake_check_build_system
 Main/fast:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
+
+1.o: 1.cpp.o
+
+.PHONY : 1.o
+
+# target to build an object file
+1.cpp.o:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/1.cpp.o
+.PHONY : 1.cpp.o
+
+1.i: 1.cpp.i
+
+.PHONY : 1.i
+
+# target to preprocess a source file
+1.cpp.i:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/1.cpp.i
+.PHONY : 1.cpp.i
+
+1.s: 1.cpp.s
+
+.PHONY : 1.s
+
+# target to generate assembly for a file
+1.cpp.s:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/1.cpp.s
+.PHONY : 1.cpp.s
+
+2.o: 2.cpp.o
+
+.PHONY : 2.o
+
+# target to build an object file
+2.cpp.o:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/2.cpp.o
+.PHONY : 2.cpp.o
+
+2.i: 2.cpp.i
+
+.PHONY : 2.i
+
+# target to preprocess a source file
+2.cpp.i:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/2.cpp.i
+.PHONY : 2.cpp.i
+
+2.s: 2.cpp.s
+
+.PHONY : 2.s
+
+# target to generate assembly for a file
+2.cpp.s:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/2.cpp.s
+.PHONY : 2.cpp.s
 
 main.o: main.cpp.o
 
@@ -163,49 +230,26 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-veclink.o: veclink.cpp.o
-
-.PHONY : veclink.o
-
-# target to build an object file
-veclink.cpp.o:
-	$(MAKE) -f CMakeFiles/Veclink.dir/build.make CMakeFiles/Veclink.dir/veclink.cpp.o
-.PHONY : veclink.cpp.o
-
-veclink.i: veclink.cpp.i
-
-.PHONY : veclink.i
-
-# target to preprocess a source file
-veclink.cpp.i:
-	$(MAKE) -f CMakeFiles/Veclink.dir/build.make CMakeFiles/Veclink.dir/veclink.cpp.i
-.PHONY : veclink.cpp.i
-
-veclink.s: veclink.cpp.s
-
-.PHONY : veclink.s
-
-# target to generate assembly for a file
-veclink.cpp.s:
-	$(MAKE) -f CMakeFiles/Veclink.dir/build.make CMakeFiles/Veclink.dir/veclink.cpp.s
-.PHONY : veclink.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Veclink"
+	@echo "... 2"
+	@echo "... 1"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Main"
+	@echo "... 1.o"
+	@echo "... 1.i"
+	@echo "... 1.s"
+	@echo "... 2.o"
+	@echo "... 2.i"
+	@echo "... 2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... veclink.o"
-	@echo "... veclink.i"
-	@echo "... veclink.s"
 .PHONY : help
 
 

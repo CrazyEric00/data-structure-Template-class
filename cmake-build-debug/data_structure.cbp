@@ -17,8 +17,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Veclink">
-				<Option output="/Users/eric/Desktop/ACM/data structure/cmake-build-debug/Veclink" prefix_auto="0" extension_auto="0"/>
+			<Target title="2">
+				<Option output="/Users/eric/Desktop/ACM/data structure/cmake-build-debug/2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/eric/Desktop/ACM/data structure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -32,14 +32,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Veclink"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 2"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Veclink/fast">
-				<Option output="/Users/eric/Desktop/ACM/data structure/cmake-build-debug/Veclink" prefix_auto="0" extension_auto="0"/>
+			<Target title="2/fast">
+				<Option output="/Users/eric/Desktop/ACM/data structure/cmake-build-debug/2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/eric/Desktop/ACM/data structure/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -53,7 +53,49 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Veclink/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1">
+				<Option output="/Users/eric/Desktop/ACM/data structure/cmake-build-debug/1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eric/Desktop/ACM/data structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1/fast">
+				<Option output="/Users/eric/Desktop/ACM/data structure/cmake-build-debug/1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eric/Desktop/ACM/data structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 1/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eric/Desktop/ACM/data\ structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -122,11 +164,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/eric/Desktop/ACM/data structure/1.cpp">
+			<Option target="1"/>
+		</Unit>
+		<Unit filename="/Users/eric/Desktop/ACM/data structure/2.cpp">
+			<Option target="2"/>
+		</Unit>
 		<Unit filename="/Users/eric/Desktop/ACM/data structure/main.cpp">
 			<Option target="Main"/>
-		</Unit>
-		<Unit filename="/Users/eric/Desktop/ACM/data structure/veclink.cpp">
-			<Option target="Veclink"/>
 		</Unit>
 		<Unit filename="/Users/eric/Desktop/ACM/data structure/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
